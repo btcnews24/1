@@ -22,6 +22,11 @@ const BlogCard = ({ blog }) => {
         });
     }
     return (
+        <>
+            <Helmet>
+               <title>{title} | 1 BTC News </title>
+               <meta name="description" content={description} />
+            </Helmet>
             <div className='bg-slate-100 p-9 m-5 shadow-lg'>
                 <h1 className='lg:text-5xl text-3xl font-bold mb-2 text-slate-800'>{title}</h1>
                 <hr className='my-5 py-1 bg-[#1a1e3a] ' />
@@ -37,6 +42,7 @@ const BlogCard = ({ blog }) => {
 
 
             </div>
+        </>
     )
 }
 
