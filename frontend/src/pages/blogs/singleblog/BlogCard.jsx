@@ -1,6 +1,7 @@
 import React from 'react'
 import EditorJSHTML from "editorjs-html"
 import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet';
 
 
 const editorJSHTML = EditorJSHTML()
